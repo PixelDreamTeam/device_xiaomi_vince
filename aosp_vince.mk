@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common Project-Elixir stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/pb/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
@@ -41,10 +41,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
 
-# Project-Elixir
-ELIXIR_MAINTAINER := PrajjuS
-ELIXIR_BUILD_TYPE := OFFICIAL
-IS_PHONE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_STOCK_ACORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
